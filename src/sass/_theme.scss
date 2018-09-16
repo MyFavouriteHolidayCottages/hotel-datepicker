@@ -2,7 +2,7 @@
  * THEME
  * ============================================================*/
 
-.datepicker {
+.#{$hotel-datepicker-prefix} {
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 8px 8px 40px 5px rgba(0,0,0,.08);
@@ -12,15 +12,15 @@
 	line-height: 14px;
 }
 
-.datepicker__inner {
+.#{$hotel-datepicker-prefix}__inner {
 	padding: 20px;
 }
 
-.datepicker__month {
+.#{$hotel-datepicker-prefix}__month {
 	font-size: 12px;
 }
 
-.datepicker__months {
+.#{$hotel-datepicker-prefix}__months {
 	@include mq_m {
 		position: relative;
 
@@ -37,34 +37,34 @@
 	}
 }
 
-.datepicker__month-caption {
+.#{$hotel-datepicker-prefix}__month-caption {
 	border-bottom: 1px solid $line__border__color;
 	height: 2.5em;
 	vertical-align: middle;
 }
 
-.datepicker__month-name {
+.#{$hotel-datepicker-prefix}__month-name {
 	text-transform: uppercase;
 }
 
-.datepicker__week-days {
+.#{$hotel-datepicker-prefix}__week-days {
 	height: 2em;
 	vertical-align: middle;
 }
 
-.datepicker__week-name {
+.#{$hotel-datepicker-prefix}__week-name {
 	font-size: 11px;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
-.datepicker__month-day {
+.#{$hotel-datepicker-prefix}__month-day {
 	@include transition;
 	color: $text__light__color;
 	padding: 9px 7px;
 }
 
-.datepicker__month-day--no-check-in {
+.#{$hotel-datepicker-prefix}__month-day--no-check-in {
 	position: relative;
 
 	&:after {
@@ -80,7 +80,7 @@
 	}
 }
 
-.datepicker__month-day--no-check-out {
+.#{$hotel-datepicker-prefix}__month-day--no-check-out {
 	position: relative;
 
 	&:after {
@@ -96,11 +96,11 @@
 	}
 }
 
-.datepicker__month-day--invalid {
+.#{$hotel-datepicker-prefix}__month-day--invalid {
 	color: $text__invalid__color;
 }
 
-.datepicker__month-day--disabled {
+.#{$hotel-datepicker-prefix}__month-day--disabled {
 	color: $text__invalid__color;
 	position: relative;
 
@@ -115,13 +115,13 @@
 	}
 }
 
-.datepicker__month-day--day-of-week-disabled {
+.#{$hotel-datepicker-prefix}__month-day--day-of-week-disabled {
 	background-color: rgba($text__invalid__color, .5);
 }
 
-.datepicker__month-day--checkout-enabled {}
+.#{$hotel-datepicker-prefix}__month-day--checkout-enabled {}
 
-.datepicker__month-day--selected {
+.#{$hotel-datepicker-prefix}__month-day--selected {
 	background-color: rgba($accent__color,.2);
 	color: #fff;
 
@@ -130,27 +130,27 @@
 	}
 }
 
-.datepicker__month-day--hovering {
+.#{$hotel-datepicker-prefix}__month-day--hovering {
 	background-color: rgba($accent__color,.3);
 	color: #fff;
 }
 
-.datepicker__month-day--today {
+.#{$hotel-datepicker-prefix}__month-day--today {
 	background-color: $text__base__color;
 	color: #fff;
 }
 
-.datepicker__month-day--first-day-selected,
-.datepicker__month-day--last-day-selected {
+.#{$hotel-datepicker-prefix}__month-day--first-day-selected,
+.#{$hotel-datepicker-prefix}__month-day--last-day-selected {
 	background-color: $accent__color;
 	color: #fff;
 }
 
-.datepicker__month-day--last-day-selected:after {
+.#{$hotel-datepicker-prefix}__month-day--last-day-selected:after {
 	content: none;
 }
 
-.datepicker__month-button {
+.#{$hotel-datepicker-prefix}__month-button {
 	@include transition;
 	background-color: $button__bg__color;
 	border-radius: 4px;
@@ -164,41 +164,41 @@
 	}
 }
 
-.datepicker__topbar {
+.#{$hotel-datepicker-prefix}__topbar {
 	margin-bottom: 20px;
 	position: relative;
 }
 
-.datepicker__info-text {
+.#{$hotel-datepicker-prefix}__info-text {
 	font-size: 13px;
 }
 
-.datepicker__info--selected {
+.#{$hotel-datepicker-prefix}__info--selected {
 	font-size: 11px;
 	text-transform: uppercase;
 }
 
-.datepicker__info--selected-label {
+.#{$hotel-datepicker-prefix}__info--selected-label {
 	color: $text__light__color;
 }
 
-.datepicker__info-text--selected-days {
+.#{$hotel-datepicker-prefix}__info-text--selected-days {
 	font-size: 11px;
 	font-style: normal;
 }
 
-.datepicker__info--error {
+.#{$hotel-datepicker-prefix}__info--error {
 	color: red;
 	font-size: 13px;
 	font-style: italic;
 }
 
-.datepicker__info--help {
+.#{$hotel-datepicker-prefix}__info--help {
 	color: $text__light__color;
 	font-style: italic;
 }
 
-.datepicker__close-button {
+.#{$hotel-datepicker-prefix}__close-button {
 	@include transition;
 	background-color: $button__bg__hover__color;
 	border-radius: 4px;
@@ -225,7 +225,7 @@
 	}
 }
 
-.datepicker__tooltip {
+.#{$hotel-datepicker-prefix}__tooltip {
 	background-color: #ffe684;
 	border-radius: 2px;
 	font-size: 11px;

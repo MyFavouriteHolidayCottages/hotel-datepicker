@@ -2,7 +2,7 @@
  * BASE STYLES
  * ============================================================*/
 
-.datepicker {
+.#{$hotel-datepicker-prefix} {
 	box-sizing: border-box;
 	overflow: hidden;
 	position: absolute;
@@ -22,17 +22,17 @@
 	}
 }
 
-.datepicker__inner {
+.#{$hotel-datepicker-prefix}__inner {
 	overflow: hidden;
 }
 
-.datepicker__months {
+.#{$hotel-datepicker-prefix}__months {
 	@include mq_m {
 		overflow: hidden;
 	}
 }
 
-.datepicker__month {
+.#{$hotel-datepicker-prefix}__month {
 	border-collapse: collapse;
 	text-align: center;
 	width: 100%;
@@ -46,13 +46,13 @@
 	}
 }
 
-.datepicker__month--month1 {
+.#{$hotel-datepicker-prefix}__month--month1 {
 	@include mq_m {
 		float: left;
 	}
 }
 
-.datepicker__month--month2 {
+.#{$hotel-datepicker-prefix}__month--month2 {
 	display: none;
 
 	@include mq_m {
@@ -61,38 +61,37 @@
 	}
 }
 
-.datepicker__month-day--valid {
+.#{$hotel-datepicker-prefix}__month-day--valid {
 	cursor: pointer;
 }
 
-.datepicker__month-day--lastMonth,
-.datepicker__month-day--nextMonth {
+.#{$hotel-datepicker-prefix}__month-day--lastMonth,
+.#{$hotel-datepicker-prefix}__month-day--nextMonth {
 	visibility: hidden;
 }
 
-.datepicker__month-button {
+.#{$hotel-datepicker-prefix}__month-button {
 	cursor: pointer;
 }
 
-.datepicker__month-button--disabled {
+.#{$hotel-datepicker-prefix}__month-button--disabled {
 	@include mq_m {
 		visibility: hidden;
 	}
 }
 
-.datepicker__info--feedback {
+.#{$hotel-datepicker-prefix}__info--feedback {
 	display: none;
 }
 
-.datepicker__info--error,
-.datepicker__info--help {
+.#{$hotel-datepicker-prefix}__info--error,
+.#{$hotel-datepicker-prefix}__info--help {
 	display: block;
 }
 
-.datepicker__close-button {
+.#{$hotel-datepicker-prefix}__close-button {
 	cursor: pointer;
 }
-
-.datepicker__tooltip {
+.#{$hotel-datepicker-prefix}__tooltip {
 	position: absolute;
 }
